@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.aside-gradient {
+  background: linear-gradient(180deg, #113641 0%, #062229 100%);
+}
+
+.burger {
+  position: relative;
+  z-index: 50;
+  align-items: center;
+  rotate: 180deg;
+  justify-content: flex-end;
+  padding: 10px;
+  width: 38px;
+  height: 36px;
+}
+
+.burger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  transform: scale(1);
+  background-color: white;
+}
+
+.burger::before, .burger::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {top: 30%}
+
+.burger::after {bottom: 30%}
+
+.burger.active span { transform: scale(0); }
+
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+.manuu {
+  height: calc(100vh - 76px);
+}
