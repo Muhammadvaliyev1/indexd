@@ -28,7 +28,8 @@ module.exports = {
         'darkblue': '#0F3641',
         'wheat': '#F2F2F2',
         'space-wheat': '#F7F7F7',
-        'border': '#DCDCDC'
+        'border': '#DCDCDC',
+        'red': '#F52828'
       }
     },
   },

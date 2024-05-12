@@ -6,6 +6,10 @@
   background: linear-gradient(180deg, #113641 0%, #062229 100%);
 }
 
+.gradient {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
 .burger {
   position: relative;
   z-index: 50;
@@ -53,3 +57,8 @@
 .manuu {
   height: calc(100vh - 76px);
 }
+
+.password {
+  -webkit-text-security: sri;
+}
+
