@@ -21,6 +21,7 @@ module.exports = {
         'gray': '#1C4551',
         'green': '#80CF55',
         'space-green': '#87DB5A',
+        'spaced-green': '#DFF3D5',
         'space-gray': '#577983',
         'spaced-gray': '#B0B0B0',
         'spacedd-gray': '#798487',
@@ -29,7 +30,8 @@ module.exports = {
         'wheat': '#F2F2F2',
         'space-wheat': '#F7F7F7',
         'border': '#DCDCDC',
-        'red': '#F52828'
+        'red': '#F52828',
+        'rouse-red': '#EE3333'
       }
     },
   },

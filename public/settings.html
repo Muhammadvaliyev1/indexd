@@ -126,7 +126,7 @@
       </div>
     </header>
 
-    <main class="px-4 sm:px-5">
+    <main class="relative px-4 sm:px-5">
       <section class="w-full rounded-3xl overflow-hidden bg-space-wheat">
         <div class="text-center sm:text-left pl-5 sm:pl-8 lg:pl-11 py-4">
           <span class="text-lg font-medium text-darkblue">Settings</span>
@@ -205,22 +205,57 @@
             </div>
             <div class="hidden xl:block space-y-3 row-span-2"></div>
             <div>
-              <a href="#" class="block bg-green text-lg font-medium text-white text-center rounded-xl lg:mt-9 xl:mt-0 py-3">Update Settings</a>
+              <button popovertarget="update" class="w-full block bg-green text-lg font-medium text-white text-center rounded-xl lg:mt-9 xl:mt-0 py-3">Update Settings</button>
             </div>
             <div class="hidden lg:block pt-3 lg:pt-9 xl:pt-3">
-              <span class="text-lg font-medium text-space-gray">I want to <a href="#" class="text-red underline">delete</a> my account</span>
+              <span class="text-lg font-medium text-space-gray">I want to <button popovertarget="deletacc" type="button" class="text-red underline">delete</button> my account</span>
             </div>
           </div>
         </div>
         <span class="text-center block lg:hidden text-lg font-medium text-space-gray my-7">I want to <a href="#" class="text-red underline">delete</a> my account</span>
       </section>
+      <div id="update" popover class="backdrop:bg-[#777777] backdrop:bg-opacity-[0.56] w-[424px] h-36 border border-border bg-white rounded-2xl px-9 pt-9">
+        <div class="flex items-start justify-start gap-x-4">
+          <div class="w-14 h-14 bg-spaced-green rounded-full px-4 py-5">
+            <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.6011 3.70884L9.57469 17.7352C9.45252 17.8578 9.30736 17.9551 9.14752 18.0214C8.98768 18.0878 8.81631 18.122 8.64325 18.122C8.47018 18.122 8.29881 18.0878 8.13897 18.0214C7.97914 17.9551 7.83397 17.8578 7.71181 17.7352L1.57527 11.5987C1.45295 11.4764 1.35592 11.3311 1.28972 11.1713C1.22352 11.0115 1.18945 10.8402 1.18945 10.6672C1.18945 10.4943 1.22352 10.323 1.28972 10.1631C1.35592 10.0033 1.45295 9.85812 1.57527 9.7358C1.69759 9.61348 1.8428 9.51646 2.00262 9.45026C2.16243 9.38406 2.33372 9.34999 2.50671 9.34999C2.67969 9.34999 2.85098 9.38406 3.0108 9.45026C3.17061 9.51646 3.31583 9.61348 3.43815 9.7358L8.64434 14.942L21.7404 1.84816C21.9874 1.60112 22.3225 1.46234 22.6718 1.46234C23.0212 1.46234 23.3562 1.60112 23.6033 1.84816C23.8503 2.09519 23.9891 2.43024 23.9891 2.7796C23.9891 3.12895 23.8503 3.464 23.6033 3.71103L23.6011 3.70884Z" fill="#80CF55" stroke="#80CF55"/>
+            </svg>            
+          </div>
+          <div>
+            <h5 class="text-2xl font-bold text-darkblue">Settings Updated</h5>
+            <p class="text-sm font-medium text-space-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+          </div>
+          <button type="button" id="clickButton" class="absolute top-3.5 right-5">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.1933 1.10768C13.1008 1.01498 12.9909 0.941434 12.8699 0.891252C12.7489 0.841071 12.6193 0.81524 12.4883 0.81524C12.3573 0.81524 12.2276 0.841071 12.1067 0.891252C11.9857 0.941434 11.8758 1.01498 11.7833 1.10768L6.89329 5.98768L2.00329 1.09768C1.91071 1.0051 1.8008 0.931662 1.67983 0.881557C1.55887 0.831452 1.42922 0.805664 1.29829 0.805664C1.16736 0.805664 1.03771 0.831452 0.916747 0.881557C0.795783 0.931662 0.685872 1.0051 0.59329 1.09768C0.500708 1.19027 0.427268 1.30018 0.377163 1.42114C0.327058 1.54211 0.30127 1.67175 0.30127 1.80268C0.30127 1.93362 0.327058 2.06326 0.377163 2.18423C0.427268 2.30519 0.500708 2.4151 0.59329 2.50768L5.48329 7.39768L0.59329 12.2877C0.500708 12.3803 0.427268 12.4902 0.377163 12.6111C0.327058 12.7321 0.30127 12.8618 0.30127 12.9927C0.30127 13.1236 0.327058 13.2533 0.377163 13.3742C0.427268 13.4952 0.500708 13.6051 0.59329 13.6977C0.685872 13.7903 0.795783 13.8637 0.916747 13.9138C1.03771 13.9639 1.16736 13.9897 1.29829 13.9897C1.42922 13.9897 1.55887 13.9639 1.67983 13.9138C1.8008 13.8637 1.91071 13.7903 2.00329 13.6977L6.89329 8.80768L11.7833 13.6977C11.8759 13.7903 11.9858 13.8637 12.1067 13.9138C12.2277 13.9639 12.3574 13.9897 12.4883 13.9897C12.6192 13.9897 12.7489 13.9639 12.8698 13.9138C12.9908 13.8637 13.1007 13.7903 13.1933 13.6977C13.2859 13.6051 13.3593 13.4952 13.4094 13.3742C13.4595 13.2533 13.4853 13.1236 13.4853 12.9927C13.4853 12.8618 13.4595 12.7321 13.4094 12.6111C13.3593 12.4902 13.2859 12.3803 13.1933 12.2877L8.30329 7.39768L13.1933 2.50768C13.5733 2.12768 13.5733 1.48768 13.1933 1.10768Z" fill="#C6C6C6"/>
+            </svg>            
+          </button>
+        </div>
+      </div>
+      <div id="deletacc" popover class="relative w-[330px] h-[409px] backdrop:bg-darkblue backdrop:bg-opacity-[0.91] border border-border bg-white rounded-2xl pt-11 pb-7 px-3">
+        <div class="flex flex-col items-start justify-center">
+          <h5 class="text-center text-2xl mx-auto font-bold text-darkblue">Delete Account</h5>
+          <p class="text-center text-space-gray mt-6">
+            We’re sorry to see you go. <br>
+            If there's anything we can help with, please just get in touch.
+          </p>
+          <button type="button" class="mx-auto inline-block bg-space-green rounded-lg text-white font-medium mt-9 px-16 py-3">Contact Us</button>
+          <button type="button" class="mx-auto inline-block bg-rouse-red rounded-lg text-white font-medium mt-4 px-[47px] py-3">Delete Account</button>
+          <span class="text-sm text-space-gray text-center mt-9">Please note: This action <span class="font-bold">can not</span> be reversed</span>
+        </div>
+        <button type="button" id="clickButton2" class="absolute top-3.5 right-5">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.1933 1.10768C13.1008 1.01498 12.9909 0.941434 12.8699 0.891252C12.7489 0.841071 12.6193 0.81524 12.4883 0.81524C12.3573 0.81524 12.2276 0.841071 12.1067 0.891252C11.9857 0.941434 11.8758 1.01498 11.7833 1.10768L6.89329 5.98768L2.00329 1.09768C1.91071 1.0051 1.8008 0.931662 1.67983 0.881557C1.55887 0.831452 1.42922 0.805664 1.29829 0.805664C1.16736 0.805664 1.03771 0.831452 0.916747 0.881557C0.795783 0.931662 0.685872 1.0051 0.59329 1.09768C0.500708 1.19027 0.427268 1.30018 0.377163 1.42114C0.327058 1.54211 0.30127 1.67175 0.30127 1.80268C0.30127 1.93362 0.327058 2.06326 0.377163 2.18423C0.427268 2.30519 0.500708 2.4151 0.59329 2.50768L5.48329 7.39768L0.59329 12.2877C0.500708 12.3803 0.427268 12.4902 0.377163 12.6111C0.327058 12.7321 0.30127 12.8618 0.30127 12.9927C0.30127 13.1236 0.327058 13.2533 0.377163 13.3742C0.427268 13.4952 0.500708 13.6051 0.59329 13.6977C0.685872 13.7903 0.795783 13.8637 0.916747 13.9138C1.03771 13.9639 1.16736 13.9897 1.29829 13.9897C1.42922 13.9897 1.55887 13.9639 1.67983 13.9138C1.8008 13.8637 1.91071 13.7903 2.00329 13.6977L6.89329 8.80768L11.7833 13.6977C11.8759 13.7903 11.9858 13.8637 12.1067 13.9138C12.2277 13.9639 12.3574 13.9897 12.4883 13.9897C12.6192 13.9897 12.7489 13.9639 12.8698 13.9138C12.9908 13.8637 13.1007 13.7903 13.1933 13.6977C13.2859 13.6051 13.3593 13.4952 13.4094 13.3742C13.4595 13.2533 13.4853 13.1236 13.4853 12.9927C13.4853 12.8618 13.4595 12.7321 13.4094 12.6111C13.3593 12.4902 13.2859 12.3803 13.1933 12.2877L8.30329 7.39768L13.1933 2.50768C13.5733 2.12768 13.5733 1.48768 13.1933 1.10768Z" fill="#C6C6C6"/>
+          </svg>            
+        </button>
+      </div>
     </main>
   </div>
 
   <div id="hunburgerManu" class="-left-[840px] manuu aside-gradient navbar-menu fixed flex flex-col items-center justify-between base:hidden top-[75px] w-full transition-all ease-in-out duration-300 z-[99999] px-5 pb-9">
     <div class="w-full">
       <div class="space-y-2.5">
-        <a href="#" class="hover:bg-gray flex items-center justify-start gap-x-3.5 rounded-xl px-4 py-3">
+        <a href="./dashboard.html" class="hover:bg-gray flex items-center justify-start gap-x-3.5 rounded-xl px-4 py-3">
           <div>
             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.68475 20.7821V17.7152C9.68473 16.9381 10.3167 16.3067 11.0995 16.3018H13.9736C14.7599 16.3018 15.3973 16.9346 15.3973 17.7152V20.7732C15.3973 21.4473 15.945 21.9951 16.624 22H18.5848C19.5007 22.0023 20.3798 21.6428 21.0282 21.0007C21.6766 20.3586 22.041 19.4868 22.041 18.5775V9.86585C22.041 9.13139 21.7131 8.43471 21.1456 7.9635L14.484 2.67427C13.3195 1.74912 11.6564 1.77901 10.5264 2.74538L4.00803 7.9635C3.41376 8.42082 3.05857 9.11956 3.04102 9.86585V18.5686C3.04102 20.4637 4.5884 22 6.49719 22H8.41331C8.74019 22.0023 9.0545 21.8751 9.28649 21.6464C9.51847 21.4178 9.64894 21.1067 9.64893 20.7821H9.68475Z" fill="white"/>
@@ -303,5 +338,43 @@
     </div>
   </div>
   <script src="./app.js"></script>
+  <script>
+    document.getElementById("clickButton").addEventListener("click", function() {
+            // Клик по указанным координатам
+            var x = 300;
+            var y = 300;
+
+            // Создаем событие клика в указанных координатах
+            var clickEvent = new MouseEvent("click", {
+                view: window,
+                bubbles: true,
+                cancelable: true,
+                clientX: x,
+                clientY: y
+            });
+
+            // Диспетчируем событие клика на указанные координаты
+            document.elementFromPoint(x, y).dispatchEvent(clickEvent);
+        });
+  </script>
+  <script>
+    document.getElementById("clickButton2").addEventListener("click", function() {
+            // Клик по указанным координатам
+            var x = 300;
+            var y = 300;
+
+            // Создаем событие клика в указанных координатах
+            var clickEvent = new MouseEvent("click", {
+                view: window,
+                bubbles: true,
+                cancelable: true,
+                clientX: x,
+                clientY: y
+            });
+
+            // Диспетчируем событие клика на указанные координаты
+            document.elementFromPoint(x, y).dispatchEvent(clickEvent);
+        });
+  </script>
 </body>
 </html>

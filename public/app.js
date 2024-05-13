@@ -38,13 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-const radi = document.getElementById('radi');
-    const checke = document.getElementById('checke');
-
-    radi.addEventListener('click', () => {
-      checke.classList.toggle('block');
-    });
-
 const xburger = document.getElementById('hello');
 
   xburger.addEventListener('click', () => {
@@ -146,10 +139,3 @@ const xburger = document.getElementById('hello');
   togle5.addEventListener('click', () => {
     togle5.classList.toggle('bg-space-green')
   })
-
-  const radio = document.getElementById('radio');
-    const checked = document.getElementById('checked');
-
-    radio.addEventListener('click', () => {
-      checked.classList.toggle('block')
-    })
