@@ -45,7 +45,7 @@
             </div>
             <span class="text-lg font-medium text-white">Billing</span>
           </a>
-          <a href="./settings.html" class="bg-gray flex items-center justify-start gap-x-3.5 rounded-xl px-4 py-3">
+          <a href="./settings.html" class="hover:bg-gray flex items-center justify-start gap-x-3.5 rounded-xl px-4 py-3">
             <div>
               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12.4942 14.8832C10.8897 14.8832 9.5918 13.6332 9.5918 12.0632C9.5918 10.4932 10.8897 9.23315 12.4942 9.23315C14.0986 9.23315 15.3659 10.4932 15.3659 12.0632C15.3659 13.6332 14.0986 14.8832 12.4942 14.8832Z" fill="white"/>
@@ -54,7 +54,7 @@
             </div>
             <span class="text-lg font-medium text-white">Settings</span>
           </a>
-          <a href="./help.html" class="hover:bg-gray flex items-center justify-start gap-x-3.5 rounded-xl px-4 py-3">
+          <a href="./help.html" class="bg-gray flex items-center justify-start gap-x-3.5 rounded-xl px-4 py-3">
             <div>
               <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M12.3125 22.5C17.8355 22.5 22.3125 18.023 22.3125 12.5C22.3125 6.977 17.8355 2.5 12.3125 2.5C6.7895 2.5 2.3125 6.977 2.3125 12.5C2.3125 18.023 6.7895 22.5 12.3125 22.5ZM12.3125 16.5C13.3734 16.5 14.3908 16.0786 15.1409 15.3284C15.8911 14.5783 16.3125 13.5609 16.3125 12.5C16.3125 11.4391 15.8911 10.4217 15.1409 9.67157C14.3908 8.92143 13.3734 8.5 12.3125 8.5C11.2516 8.5 10.2342 8.92143 9.48407 9.67157C8.73393 10.4217 8.3125 11.4391 8.3125 12.5C8.3125 13.5609 8.73393 14.5783 9.48407 15.3284C10.2342 16.0786 11.2516 16.5 12.3125 16.5Z" fill="white"/>
@@ -126,132 +126,106 @@
       </div>
     </header>
 
-    <main class="relative px-4 sm:px-5">
+    <main class="px-4 sm:px-5">
       <section class="w-full rounded-3xl overflow-hidden bg-space-wheat">
         <div class="text-center sm:text-left pl-5 sm:pl-8 lg:pl-11 py-4">
-          <span class="text-lg font-medium text-darkblue">Settings</span>
+          <span class="text-lg font-medium text-darkblue">Help and Support</span>
         </div>
-        <div class="bg-white rounded-3xl p-5 sm:p-8 lg:p-11">
-          <div class="max-w-[1153px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-rows-5 items-start gap-x-8 lg:gap-x-11 gap-y-8">
-            <div class="space-y-3">
-              <span class="block text-lg font-medium text-space-gray">Name</span>
-              <input type="text" name="name" id="name" placeholder="Lastname" class="w-full block outline-none bg-space-wheat text-lg font-medium text-darkblue placeholder:text-lg placeholder:font-medium placeholder:text-darkblue rounded-xl px-5 py-3">
+        <div class="bg-space-wheat sm:bg-white rounded-3xl">
+          <div class="sm:bg-transparent flex flex-col lg:flex-row items-center gap-y-3 justify-between px-5 sm:px-8 lg:px-11 pt-0 sm:pt-8 lg:pt-11 pb-6 sm:pb-9">
+            <div class="w-full lg:w-1/2 flex flex-col lg:flex-row items-center justify-start gap-x-3">
+              <input type="search" name="search" id="src" placeholder="Search through articles.." class="w-full lg:w-3/4 outline-none bg-white sm:bg-space-wheat rounded-lg text-lg font-medium text-ray placeholder:text-lg placeholder:font-medium placeholder:text-ray px-6 py-3.5">
+              <button type="button" class="w-1/4 hidden lg:block text-lg font-medium text-white bg-green rounded-lg text-center py-3.5">Search</button>
             </div>
-            <div class="space-y-3">
-              <span class="block text-lg font-medium text-space-gray">Option</span>
-              <input type="text" name="option" id="option" placeholder="Option" class="w-full block outline-none bg-space-wheat text-lg font-medium text-darkblue placeholder:text-lg placeholder:font-medium placeholder:text-darkblue rounded-xl px-5 py-3">
-            </div>
-            <div class="hidden xl:block space-y-6">
-              <span class="block text-lg font-medium text-space-gray">Another Option</span>
-              <div class="flex items-center justify-start gap-x-3.5">
-                <button type="button" id="radi" onclick="" class="w-6 h-6 flex items-center justify-center cursor-pointer rounded-full border border-border">
-                  <div>
-                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.5113 1.60646L4.3545 7.76329C4.30087 7.8171 4.23715 7.85979 4.16699 7.88892C4.09683 7.91806 4.02161 7.93305 3.94564 7.93305C3.86968 7.93305 3.79446 7.91806 3.7243 7.88892C3.65414 7.85979 3.59042 7.8171 3.53679 7.76329L0.84318 5.06967C0.789489 5.01598 0.746899 4.95224 0.717841 4.88209C0.688784 4.81194 0.673828 4.73675 0.673828 4.66082C0.673828 4.58489 0.688784 4.5097 0.717841 4.43955C0.746899 4.3694 0.789489 4.30566 0.84318 4.25197C0.896871 4.19828 0.960612 4.15569 1.03076 4.12663C1.10091 4.09757 1.1761 4.08262 1.25203 4.08262C1.32796 4.08262 1.40315 4.09757 1.4733 4.12663C1.54345 4.15569 1.60719 4.19828 1.66088 4.25197L3.94613 6.53721L9.69458 0.789713C9.80302 0.681279 9.95009 0.620361 10.1034 0.620361C10.2568 0.620361 10.4039 0.681279 10.5123 0.789713C10.6207 0.898148 10.6816 1.04522 10.6816 1.19857C10.6816 1.35191 10.6207 1.49898 10.5123 1.60742L10.5113 1.60646Z" fill="#80CF55" stroke="#80CF55"/>
-                    </svg>                      
-                  </div>
-                </button>
-                <span class="text-lg font-medium text-darkblue">Radio Box Option Here</span>
+            <button type="button" class="w-full lg:w-fit flex items-center justify-center lg:justify-start rounded-lg gap-x-2.5 bg-green px-12 py-3">
+              <div>
+                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.1758 4.9751H4.17578C3.07578 4.9751 2.18578 5.8751 2.18578 6.9751L2.17578 18.9751C2.17578 20.0751 3.07578 20.9751 4.17578 20.9751H20.1758C21.2758 20.9751 22.1758 20.0751 22.1758 18.9751V6.9751C22.1758 5.8751 21.2758 4.9751 20.1758 4.9751ZM19.7758 9.2251L12.7058 13.6451C12.3858 13.8451 11.9658 13.8451 11.6458 13.6451L4.57578 9.2251C4.47551 9.16881 4.3877 9.09276 4.31767 9.00155C4.24764 8.91034 4.19684 8.80588 4.16836 8.69447C4.13987 8.58306 4.13428 8.46703 4.15194 8.3534C4.16959 8.23978 4.21012 8.13091 4.27106 8.0334C4.33201 7.93589 4.41211 7.85175 4.50651 7.78609C4.60091 7.72043 4.70765 7.67461 4.82028 7.6514C4.9329 7.62818 5.04906 7.62806 5.16174 7.65105C5.27441 7.67403 5.38124 7.71963 5.47578 7.7851L12.1758 11.9751L18.8758 7.7851C18.9703 7.71963 19.0772 7.67403 19.1898 7.65105C19.3025 7.62806 19.4187 7.62818 19.5313 7.6514C19.6439 7.67461 19.7507 7.72043 19.8451 7.78609C19.9395 7.85175 20.0196 7.93589 20.0805 8.0334C20.1414 8.13091 20.182 8.23978 20.1996 8.3534C20.2173 8.46703 20.2117 8.58306 20.1832 8.69447C20.1547 8.80588 20.1039 8.91034 20.0339 9.00155C19.9639 9.09276 19.8761 9.16881 19.7758 9.2251Z" fill="white"/>
+                </svg>                  
+              </div>
+              <span class="text-lg font-medium text-white">Contact Us</span>
+            </button>
+          </div>
+          <div class="px-5 sm:px-8 lg:px-11">
+            <div class="space-y-7">
+              <span class="text-xl font-bold text-darkblue">Getting Started</span>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:gap-10">
+                <div>
+                  <div class="w-full h-[212px] rounded-2xl aside-gradient"></div>
+                  <h5 class="text-xl font-bold text-darkblue mt-6">Lorem ipsum dolor sit amet?</h5>
+                  <p class="text-lg font-medium text-space-gray mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor <br>
+                    <span class="text-green">read more..</span>
+                  </p>
+                </div>
+                <div>
+                  <div class="w-full h-[212px] rounded-2xl aside-gradient"></div>
+                  <h5 class="text-xl font-bold text-darkblue mt-6">Lorem ipsum dolor sit amet?</h5>
+                  <p class="text-lg font-medium text-space-gray mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor <br>
+                    <span class="text-green">read more..</span>
+                  </p>
+                </div>
+                <div>
+                  <div class="w-full h-[212px] rounded-2xl aside-gradient"></div>
+                  <h5 class="text-xl font-bold text-darkblue mt-6">Lorem ipsum dolor sit amet?</h5>
+                  <p class="text-lg font-medium text-space-gray mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor <br>
+                    <span class="text-green">read more..</span>
+                  </p>
+                </div>
+                <div>
+                  <div class="w-full h-[212px] rounded-2xl aside-gradient"></div>
+                  <h5 class="text-xl font-bold text-darkblue mt-6">Lorem ipsum dolor sit amet?</h5>
+                  <p class="text-lg font-medium text-space-gray mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor <br>
+                    <span class="text-green">read more..</span>
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="space-y-3">
-              <span class="block text-lg font-medium text-space-gray">Email</span>
-              <input type="email" name="email" id="email" placeholder="adrien@email.com" class="w-full block outline-none bg-space-wheat text-lg font-medium text-darkblue placeholder:text-lg placeholder:font-medium placeholder:text-darkblue rounded-xl px-5 py-3">
-            </div>
-            <div class="space-y-3">
-              <span class="block text-lg font-medium text-space-gray">Email</span>
-              <input type="email" name="email" id="email" placeholder="adrien@email.com" class="w-full block outline-none bg-space-wheat text-lg font-medium text-darkblue placeholder:text-lg placeholder:font-medium placeholder:text-darkblue rounded-xl px-5 py-3">
-            </div>
-            <div class="hidden xl:block space-y-6">
-              <span class="block text-lg font-medium text-space-gray">Receive notifications</span>
-              <div class="flex items-center justify-start gap-x-3.5">
-                <button type="button" id="radi" class="w-6 h-6 flex items-center justify-center cursor-pointer rounded-md border border-border">
-                  <div>
-                    <svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.5113 1.60646L4.3545 7.76329C4.30087 7.8171 4.23715 7.85979 4.16699 7.88892C4.09683 7.91806 4.02161 7.93305 3.94564 7.93305C3.86968 7.93305 3.79446 7.91806 3.7243 7.88892C3.65414 7.85979 3.59042 7.8171 3.53679 7.76329L0.84318 5.06967C0.789489 5.01598 0.746899 4.95224 0.717841 4.88209C0.688784 4.81194 0.673828 4.73675 0.673828 4.66082C0.673828 4.58489 0.688784 4.5097 0.717841 4.43955C0.746899 4.3694 0.789489 4.30566 0.84318 4.25197C0.896871 4.19828 0.960612 4.15569 1.03076 4.12663C1.10091 4.09757 1.1761 4.08262 1.25203 4.08262C1.32796 4.08262 1.40315 4.09757 1.4733 4.12663C1.54345 4.15569 1.60719 4.19828 1.66088 4.25197L3.94613 6.53721L9.69458 0.789713C9.80302 0.681279 9.95009 0.620361 10.1034 0.620361C10.2568 0.620361 10.4039 0.681279 10.5123 0.789713C10.6207 0.898148 10.6816 1.04522 10.6816 1.19857C10.6816 1.35191 10.6207 1.49898 10.5123 1.60742L10.5113 1.60646Z" fill="#80CF55" stroke="#80CF55"/>
-                    </svg>                      
-                  </div>
-                </button>
-                <span class="text-lg font-medium text-darkblue">Email me about stuff</span>
+            <div class="space-y-7 mt-4">
+              <span class="text-xl font-bold text-darkblue">Getting Started</span>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 lg:gap-10">
+                <div>
+                  <div class="w-full h-[212px] rounded-2xl aside-gradient"></div>
+                  <h5 class="text-xl font-bold text-darkblue mt-6">Lorem ipsum dolor sit amet?</h5>
+                  <p class="text-lg font-medium text-space-gray mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor <br>
+                    <span class="text-green">read more..</span>
+                  </p>
+                </div>
+                <div>
+                  <div class="w-full h-[212px] rounded-2xl aside-gradient"></div>
+                  <h5 class="text-xl font-bold text-darkblue mt-6">Lorem ipsum dolor sit amet?</h5>
+                  <p class="text-lg font-medium text-space-gray mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor <br>
+                    <span class="text-green">read more..</span>
+                  </p>
+                </div>
+                <div>
+                  <div class="w-full h-[212px] rounded-2xl aside-gradient"></div>
+                  <h5 class="text-xl font-bold text-darkblue mt-6">Lorem ipsum dolor sit amet?</h5>
+                  <p class="text-lg font-medium text-space-gray mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor <br>
+                    <span class="text-green">read more..</span>
+                  </p>
+                </div>
+                <div>
+                  <div class="w-full h-[212px] rounded-2xl aside-gradient"></div>
+                  <h5 class="text-xl font-bold text-darkblue mt-6">Lorem ipsum dolor sit amet?</h5>
+                  <p class="text-lg font-medium text-space-gray mt-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor <br>
+                    <span class="text-green">read more..</span>
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="space-y-3">
-              <span class="block text-lg font-medium text-space-gray">Username</span>
-              <input type="text" name="username" id="username" placeholder="adrien35" class="w-full block outline-none bg-space-wheat text-lg font-medium text-darkblue placeholder:text-lg placeholder:font-medium placeholder:text-darkblue rounded-xl px-5 py-3">
-            </div>
-            <div class="space-y-3">
-              <span class="block text-lg font-medium text-space-gray">Username</span>
-              <input type="text" name="username" id="username" placeholder="adrien35" class="w-full block outline-none bg-space-wheat text-lg font-medium text-darkblue placeholder:text-lg placeholder:font-medium placeholder:text-darkblue rounded-xl px-5 py-3">
-            </div>
-            <div class="hidden xl:block space-y-3 row-span-2">
-              <span class="block text-lg font-medium text-space-gray">Option Here</span>
-              <textarea name="option" id="option" placeholder="Lorem ipsum dolor sit amet" class="w-full h-44 resize-none block outline-none bg-space-wheat text-lg font-medium text-darkblue placeholder:text-lg placeholder:font-medium placeholder:text-darkblue rounded-xl px-5 py-3"></textarea>
-            </div>
-            <div class="space-y-3">
-              <span class="block text-lg font-medium text-space-gray">Password</span>
-              <input type="password" name="password" id="password" placeholder="********" class="password w-full block outline-none bg-space-wheat text-lg font-medium text-darkblue placeholder:text-lg placeholder:font-medium placeholder:text-darkblue rounded-xl px-5 py-3">
-            </div>
-            <div class="space-y-3">
-              <span class="block text-lg font-medium text-space-gray">Password</span>
-              <input type="password" name="password" id="password" placeholder="********" class="password w-full block outline-none bg-space-wheat text-lg font-medium text-darkblue placeholder:text-lg placeholder:font-medium placeholder:text-darkblue rounded-xl px-5 py-3">
-            </div>
-            <div class="space-y-3">
-              <span class="block text-lg font-medium text-space-gray">Website</span>
-              <input type="text" name="website" id="website" placeholder="mywebsite.com" class="password w-full block outline-none bg-space-wheat text-lg font-medium text-darkblue placeholder:text-lg placeholder:font-medium placeholder:text-darkblue rounded-xl px-5 py-3">
-            </div>
-            <div class="space-y-3">
-              <span class="block text-lg font-medium text-space-gray">Website</span>
-              <input type="text" name="website" id="website" placeholder="mywebsite.com" class="password w-full block outline-none bg-space-wheat text-lg font-medium text-darkblue placeholder:text-lg placeholder:font-medium placeholder:text-darkblue rounded-xl px-5 py-3">
-            </div>
-            <div class="hidden xl:block space-y-3 row-span-2"></div>
-            <div>
-              <button popovertarget="update" class="w-full block bg-green text-lg font-medium text-white text-center rounded-xl lg:mt-9 xl:mt-0 py-3">Update Settings</button>
-            </div>
-            <div class="hidden lg:block pt-3 lg:pt-9 xl:pt-3">
-              <span class="text-lg font-medium text-space-gray">I want to <button popovertarget="deletacc" type="button" class="text-red underline">delete</button> my account</span>
             </div>
           </div>
         </div>
-        <span class="text-center block lg:hidden text-lg font-medium text-space-gray my-7">I want to <a href="#" class="text-red underline">delete</a> my account</span>
       </section>
-      <div id="update" popover class="backdrop:bg-[#777777] backdrop:bg-opacity-[0.56] w-[424px] h-36 border border-border bg-white rounded-2xl px-9 pt-9">
-        <div class="flex items-start justify-start gap-x-4">
-          <div class="w-14 h-14 bg-spaced-green rounded-full px-4 py-5">
-            <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M23.6011 3.70884L9.57469 17.7352C9.45252 17.8578 9.30736 17.9551 9.14752 18.0214C8.98768 18.0878 8.81631 18.122 8.64325 18.122C8.47018 18.122 8.29881 18.0878 8.13897 18.0214C7.97914 17.9551 7.83397 17.8578 7.71181 17.7352L1.57527 11.5987C1.45295 11.4764 1.35592 11.3311 1.28972 11.1713C1.22352 11.0115 1.18945 10.8402 1.18945 10.6672C1.18945 10.4943 1.22352 10.323 1.28972 10.1631C1.35592 10.0033 1.45295 9.85812 1.57527 9.7358C1.69759 9.61348 1.8428 9.51646 2.00262 9.45026C2.16243 9.38406 2.33372 9.34999 2.50671 9.34999C2.67969 9.34999 2.85098 9.38406 3.0108 9.45026C3.17061 9.51646 3.31583 9.61348 3.43815 9.7358L8.64434 14.942L21.7404 1.84816C21.9874 1.60112 22.3225 1.46234 22.6718 1.46234C23.0212 1.46234 23.3562 1.60112 23.6033 1.84816C23.8503 2.09519 23.9891 2.43024 23.9891 2.7796C23.9891 3.12895 23.8503 3.464 23.6033 3.71103L23.6011 3.70884Z" fill="#80CF55" stroke="#80CF55"/>
-            </svg>            
-          </div>
-          <div>
-            <h5 class="text-2xl font-bold text-darkblue">Settings Updated</h5>
-            <p class="text-sm font-medium text-space-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
-          </div>
-          <button type="button" id="clickButton" class="absolute top-3.5 right-5">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.1933 1.10768C13.1008 1.01498 12.9909 0.941434 12.8699 0.891252C12.7489 0.841071 12.6193 0.81524 12.4883 0.81524C12.3573 0.81524 12.2276 0.841071 12.1067 0.891252C11.9857 0.941434 11.8758 1.01498 11.7833 1.10768L6.89329 5.98768L2.00329 1.09768C1.91071 1.0051 1.8008 0.931662 1.67983 0.881557C1.55887 0.831452 1.42922 0.805664 1.29829 0.805664C1.16736 0.805664 1.03771 0.831452 0.916747 0.881557C0.795783 0.931662 0.685872 1.0051 0.59329 1.09768C0.500708 1.19027 0.427268 1.30018 0.377163 1.42114C0.327058 1.54211 0.30127 1.67175 0.30127 1.80268C0.30127 1.93362 0.327058 2.06326 0.377163 2.18423C0.427268 2.30519 0.500708 2.4151 0.59329 2.50768L5.48329 7.39768L0.59329 12.2877C0.500708 12.3803 0.427268 12.4902 0.377163 12.6111C0.327058 12.7321 0.30127 12.8618 0.30127 12.9927C0.30127 13.1236 0.327058 13.2533 0.377163 13.3742C0.427268 13.4952 0.500708 13.6051 0.59329 13.6977C0.685872 13.7903 0.795783 13.8637 0.916747 13.9138C1.03771 13.9639 1.16736 13.9897 1.29829 13.9897C1.42922 13.9897 1.55887 13.9639 1.67983 13.9138C1.8008 13.8637 1.91071 13.7903 2.00329 13.6977L6.89329 8.80768L11.7833 13.6977C11.8759 13.7903 11.9858 13.8637 12.1067 13.9138C12.2277 13.9639 12.3574 13.9897 12.4883 13.9897C12.6192 13.9897 12.7489 13.9639 12.8698 13.9138C12.9908 13.8637 13.1007 13.7903 13.1933 13.6977C13.2859 13.6051 13.3593 13.4952 13.4094 13.3742C13.4595 13.2533 13.4853 13.1236 13.4853 12.9927C13.4853 12.8618 13.4595 12.7321 13.4094 12.6111C13.3593 12.4902 13.2859 12.3803 13.1933 12.2877L8.30329 7.39768L13.1933 2.50768C13.5733 2.12768 13.5733 1.48768 13.1933 1.10768Z" fill="#C6C6C6"/>
-            </svg>            
-          </button>
-        </div>
-      </div>
-      <div id="deletacc" popover class="relative w-[330px] h-[409px] backdrop:bg-darkblue backdrop:bg-opacity-[0.91] border border-border bg-white rounded-2xl pt-11 pb-7 px-3">
-        <div class="flex flex-col items-start justify-center">
-          <h5 class="text-center text-2xl mx-auto font-bold text-darkblue">Delete Account</h5>
-          <p class="text-center text-space-gray mt-6">
-            We’re sorry to see you go. <br>
-            If there's anything we can help with, please just get in touch.
-          </p>
-          <button type="button" class="mx-auto inline-block bg-space-green rounded-lg text-white font-medium mt-9 px-16 py-3">Contact Us</button>
-          <button type="button" class="mx-auto inline-block bg-rouse-red rounded-lg text-white font-medium mt-4 px-[47px] py-3">Delete Account</button>
-          <span class="text-sm text-space-gray text-center mt-9">Please note: This action <span class="font-bold">can not</span> be reversed</span>
-        </div>
-        <button type="button" id="clickButton2" class="absolute top-3.5 right-5">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.1933 1.10768C13.1008 1.01498 12.9909 0.941434 12.8699 0.891252C12.7489 0.841071 12.6193 0.81524 12.4883 0.81524C12.3573 0.81524 12.2276 0.841071 12.1067 0.891252C11.9857 0.941434 11.8758 1.01498 11.7833 1.10768L6.89329 5.98768L2.00329 1.09768C1.91071 1.0051 1.8008 0.931662 1.67983 0.881557C1.55887 0.831452 1.42922 0.805664 1.29829 0.805664C1.16736 0.805664 1.03771 0.831452 0.916747 0.881557C0.795783 0.931662 0.685872 1.0051 0.59329 1.09768C0.500708 1.19027 0.427268 1.30018 0.377163 1.42114C0.327058 1.54211 0.30127 1.67175 0.30127 1.80268C0.30127 1.93362 0.327058 2.06326 0.377163 2.18423C0.427268 2.30519 0.500708 2.4151 0.59329 2.50768L5.48329 7.39768L0.59329 12.2877C0.500708 12.3803 0.427268 12.4902 0.377163 12.6111C0.327058 12.7321 0.30127 12.8618 0.30127 12.9927C0.30127 13.1236 0.327058 13.2533 0.377163 13.3742C0.427268 13.4952 0.500708 13.6051 0.59329 13.6977C0.685872 13.7903 0.795783 13.8637 0.916747 13.9138C1.03771 13.9639 1.16736 13.9897 1.29829 13.9897C1.42922 13.9897 1.55887 13.9639 1.67983 13.9138C1.8008 13.8637 1.91071 13.7903 2.00329 13.6977L6.89329 8.80768L11.7833 13.6977C11.8759 13.7903 11.9858 13.8637 12.1067 13.9138C12.2277 13.9639 12.3574 13.9897 12.4883 13.9897C12.6192 13.9897 12.7489 13.9639 12.8698 13.9138C12.9908 13.8637 13.1007 13.7903 13.1933 13.6977C13.2859 13.6051 13.3593 13.4952 13.4094 13.3742C13.4595 13.2533 13.4853 13.1236 13.4853 12.9927C13.4853 12.8618 13.4595 12.7321 13.4094 12.6111C13.3593 12.4902 13.2859 12.3803 13.1933 12.2877L8.30329 7.39768L13.1933 2.50768C13.5733 2.12768 13.5733 1.48768 13.1933 1.10768Z" fill="#C6C6C6"/>
-          </svg>            
-        </button>
-      </div>
     </main>
   </div>
-
   <div id="hunburgerManu" class="-left-[840px] manuu aside-gradient navbar-menu fixed flex flex-col items-center justify-between base:hidden top-[75px] w-full transition-all ease-in-out duration-300 z-[99999] px-5 pb-9">
     <div class="w-full">
       <div class="space-y-2.5">
@@ -281,7 +255,7 @@
           </div>
           <span class="text-lg font-medium text-white">Billing</span>
         </a>
-        <a href="./settings.html" class="bg-gray flex items-center justify-start gap-x-3.5 rounded-xl px-4 py-3">
+        <a href="./settings.html" class="hover:bg-gray flex items-center justify-start gap-x-3.5 rounded-xl px-4 py-3">
           <div>
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12.4942 14.8832C10.8897 14.8832 9.5918 13.6332 9.5918 12.0632C9.5918 10.4932 10.8897 9.23315 12.4942 9.23315C14.0986 9.23315 15.3659 10.4932 15.3659 12.0632C15.3659 13.6332 14.0986 14.8832 12.4942 14.8832Z" fill="white"/>
@@ -290,7 +264,7 @@
           </div>
           <span class="text-lg font-medium text-white">Settings</span>
         </a>
-        <a href="./help.html" class="hover:bg-gray flex items-center justify-start gap-x-3.5 rounded-xl px-4 py-3">
+        <a href="./help.html" class="bg-gray flex items-center justify-start gap-x-3.5 rounded-xl px-4 py-3">
           <div>
             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M12.3125 22.5C17.8355 22.5 22.3125 18.023 22.3125 12.5C22.3125 6.977 17.8355 2.5 12.3125 2.5C6.7895 2.5 2.3125 6.977 2.3125 12.5C2.3125 18.023 6.7895 22.5 12.3125 22.5ZM12.3125 16.5C13.3734 16.5 14.3908 16.0786 15.1409 15.3284C15.8911 14.5783 16.3125 13.5609 16.3125 12.5C16.3125 11.4391 15.8911 10.4217 15.1409 9.67157C14.3908 8.92143 13.3734 8.5 12.3125 8.5C11.2516 8.5 10.2342 8.92143 9.48407 9.67157C8.73393 10.4217 8.3125 11.4391 8.3125 12.5C8.3125 13.5609 8.73393 14.5783 9.48407 15.3284C10.2342 16.0786 11.2516 16.5 12.3125 16.5Z" fill="white"/>
@@ -338,43 +312,5 @@
     </div>
   </div>
   <script src="./app.js"></script>
-  <script>
-    document.getElementById("clickButton").addEventListener("click", function() {
-            // Клик по указанным координатам
-            var x = 300;
-            var y = 300;
-
-            // Создаем событие клика в указанных координатах
-            var clickEvent = new MouseEvent("click", {
-                view: window,
-                bubbles: true,
-                cancelable: true,
-                clientX: x,
-                clientY: y
-            });
-
-            // Диспетчируем событие клика на указанные координаты
-            document.elementFromPoint(x, y).dispatchEvent(clickEvent);
-        });
-  </script>
-  <script>
-    document.getElementById("clickButton2").addEventListener("click", function() {
-            // Клик по указанным координатам
-            var x = 300;
-            var y = 300;
-
-            // Создаем событие клика в указанных координатах
-            var clickEvent = new MouseEvent("click", {
-                view: window,
-                bubbles: true,
-                cancelable: true,
-                clientX: x,
-                clientY: y
-            });
-
-            // Диспетчируем событие клика на указанные координаты
-            document.elementFromPoint(x, y).dispatchEvent(clickEvent);
-        });
-  </script>
 </body>
 </html>

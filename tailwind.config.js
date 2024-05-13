@@ -19,6 +19,7 @@ module.exports = {
       },
       colors: {
         'gray': '#1C4551',
+        'ray': '#8698A9',
         'green': '#80CF55',
         'space-green': '#87DB5A',
         'spaced-green': '#DFF3D5',
