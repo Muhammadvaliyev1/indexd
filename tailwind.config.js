@@ -4,12 +4,18 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        '1780': '1780px',
+        '1600': '1600px',
         '1440': '1440px',
+        '1310': '1310px',
         'sll': '1150px',
         'base': '840px'
       },
       fontFamily: {
         'SpaceGrotesk': ['Space Grotesk']
+      },
+      gap: {
+        '1.4': '5px',
       },
       width: {
         '1/10': '10%',

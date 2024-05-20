@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         for (var i = 0; i < burger.length; i++) {
             burger[i].addEventListener('click', function() {
                 for (var j = 0; j < menu.length; j++) {
-                    menu[j].classList.toggle('left-0');
+                    menu[j].classList.toggle('-left-0');
                 }
             });
         }
@@ -139,3 +139,12 @@ const xburger = document.getElementById('hello');
   togle5.addEventListener('click', () => {
     togle5.classList.toggle('bg-space-green')
   })
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const chekWrapper = document.getElementById('chek-wrapper');
+    const chek = document.getElementById('chek');
+
+    chekWrapper.addEventListener('click', () => {
+      chek.classList.addEventListener('block');
+    });
+  });
